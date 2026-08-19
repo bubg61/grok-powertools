@@ -80,3 +80,12 @@ For extension behavior, unit and mocked Playwright tests are not enough. Validat
 - The local `feat/web-redesign` branch is older and divergent. Do not merge it into `main` without a separate archaeology pass; it would remove current extension/cloud/auth/sync work.
 - Local `CLAUDE.md` files may exist but are ignored locally and are not the tracked source of truth.
 - Do not commit local env files, OAuth credentials, API keys, bearer tokens, cookies, personal access tokens, or copied values from ignored files such as `web/.env.local`.
+
+## Skills
+
+Optional Grok agent skills live under `skills/`:
+
+- `skills/prompt-reviewer/` — specialized review and optimization of Grok Imagine image/character prompts (especially detailed body and clothing physics).
+- `skills/dual-foundation/` — philosophical/strategic dual-foundation canon for doctrine and problem-solving.
+
+These follow the standard skill format (SKILL.md with frontmatter). Agents can load them when relevant to prompt engineering or strategic work related to the project.
